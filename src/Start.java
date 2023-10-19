@@ -1,10 +1,21 @@
-import java.util.Scanner;
-
 public class Start {
     public static void main(String[] args) {
-        Scanner eingabe = new Scanner(System.in);
-        System.out.print("Wie ist Ihr Name: ");
-        String name = eingabe.nextLine();
-        System.out.println("Hallo " + name + ", was geht!?");
+        // Eingabe
+        int a = 21232325;
+        int b = 9235;
+
+        // Verarbeitung (Algorithmus)
+        while ( a != b ) {
+            if ( a > b ) {
+                a = a - b;
+            }
+            else {
+                b = b - a;
+            }
+        }
+
+        // Ausgabe
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
     }
 }
