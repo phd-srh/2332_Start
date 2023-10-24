@@ -1,8 +1,15 @@
+import java.util.Scanner;
+
 public class Start {
     public static void main(String[] args) {
+        Scanner eingabe = new Scanner(System.in);
+
         // Eingabe
-        int a = 21232325;
-        int b = 9235;
+        System.out.print("Geben Sie die Zahl a ein: ");
+        int a = eingabe.nextInt();
+
+        System.out.print("Geben Sie die Zahl b ein: ");
+        int b = eingabe.nextInt();
 
         // Verarbeitung (Algorithmus)
         while ( a != b ) {
